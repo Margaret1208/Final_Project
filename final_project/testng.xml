@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="AutomationTestProject run on FireFox">
+    <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="Automation_Testsuite.IFrameMediaMart" />
+            <class name="Automation_Testsuite.HandleFram"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="AutomationTestProject run on MSEdge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="Automation_Testsuite.IFrameMediaMart" />
+            <class name="Automation_Testsuite.HandleFram" />
+        </classes>
+    </test>
+</suite>
